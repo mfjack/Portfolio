@@ -11,6 +11,10 @@ const Header = () => {
       setMenu(!menu);
    };
 
+   const closeMenu = () => {
+      setMenu(false);
+   };
+
    return (
       <div className="w-full">
          <header className="flex items-center justify-between p-5 md:px-20 border-2">
@@ -18,13 +22,13 @@ const Header = () => {
 
             <nav className="hidden md:block">
                <ul className="flex items-center justify-center gap-5 md:text-lg">
-                  <Link href={"/"}>
+                  <Link onClick={closeMenu} href={"/"}>
                      <li className="font-semibold hover:text-purple-600">Inicio</li>
                   </Link>
-                  <Link href={"/about"}>
+                  <Link onClick={closeMenu} href={" /about"}>
                      <li className="font-semibold hover:text-purple-600">Sobre</li>
                   </Link>
-                  <Link href={"/projects"}>
+                  <Link onClick={closeMenu} href={" /projects"}>
                      <li className="font-semibold hover:text-purple-600">Projetos</li>
                   </Link>
                </ul>
@@ -38,13 +42,13 @@ const Header = () => {
          {menu && (
             <nav className="text-center">
                <ul className="flex flex-col">
-                  <Link className="" href={"/"}>
+                  <Link onClick={closeMenu} className="" href={"/"}>
                      <li className="font-semibold hover:bg-purple-600 hover:text-white py-3">Inicio</li>
                   </Link>
-                  <Link href={"/about"}>
+                  <Link onClick={closeMenu} href={"/about"}>
                      <li className="font-semibold hover:bg-purple-600 hover:text-white py-3">Sobre</li>
                   </Link>
-                  <Link href={"/projects"}>
+                  <Link onClick={closeMenu} href={"/projects"}>
                      <li className="font-semibold hover:bg-purple-600 hover:text-white py-3">Projetos</li>
                   </Link>
                </ul>
