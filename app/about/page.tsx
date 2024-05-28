@@ -3,7 +3,7 @@ const AboutPage = () => {
       <div className="p-5">
          <h2 className="text-xl font-semibold text-purple-600">Sobre</h2>
 
-         <p className="mt-10">
+         <p className="mt-10 text-sm">
             Sou Desenvolvedor Full Stack com um forte conjunto de habilidades técnicas e uma paixão por criar códigos. Concluí minha formação técnica e atualmente estou cursando graduação em
             Engenharia de Software. Acredito na importância de estar sempre atualizado com as melhores práticas e novas tecnologias. Para isso, desenvolvo projetos pessoais continuamente, visando
             evoluir meu conhecimento e habilidades. Além disso, estou envolvido em um projeto voluntário, onde tenho a oportunidade de aplicar minhas competências técnicas em causas significativas e
