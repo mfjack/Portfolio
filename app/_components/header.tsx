@@ -18,18 +18,20 @@ const Header = () => {
    return (
       <div className="w-full">
          <header className="flex items-center justify-between p-5 md:px-20 border-2">
-            <h1 className="font-semibold text-xl md:text-2xl">Jack</h1>
+            <Link href={"/"} className="font-semibold text-2xl md:text-2xl">
+               Jack
+            </Link>
 
             <nav className="hidden md:block">
                <ul className="flex items-center justify-center gap-5 md:text-lg">
                   <Link onClick={closeMenu} href={"/"}>
-                     <li className="font-semibold hover:text-purple-600">Inicio</li>
+                     <li className="font-semibold hover:text-purple-500">Inicio</li>
                   </Link>
                   <Link onClick={closeMenu} href={" /about"}>
-                     <li className="font-semibold hover:text-purple-600">Sobre</li>
+                     <li className="font-semibold hover:text-purple-500">Sobre</li>
                   </Link>
                   <Link onClick={closeMenu} href={" /projects"}>
-                     <li className="font-semibold hover:text-purple-600">Projetos</li>
+                     <li className="font-semibold hover:text-purple-500">Projetos</li>
                   </Link>
                </ul>
             </nav>
@@ -43,13 +45,13 @@ const Header = () => {
             <nav className="text-center">
                <ul className="flex flex-col">
                   <Link onClick={closeMenu} className="" href={"/"}>
-                     <li className="font-semibold hover:bg-purple-600 hover:text-white py-3">Inicio</li>
+                     <li className="font-semibold hover:bg-purple-500 hover:text-white py-3">Inicio</li>
                   </Link>
                   <Link onClick={closeMenu} href={"/about"}>
-                     <li className="font-semibold hover:bg-purple-600 hover:text-white py-3">Sobre</li>
+                     <li className="font-semibold hover:bg-purple-500 hover:text-white py-3">Sobre</li>
                   </Link>
                   <Link onClick={closeMenu} href={"/projects"}>
-                     <li className="font-semibold hover:bg-purple-600 hover:text-white py-3">Projetos</li>
+                     <li className="font-semibold hover:bg-purple-500 hover:text-white py-3">Projetos</li>
                   </Link>
                </ul>
             </nav>
