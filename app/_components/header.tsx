@@ -42,7 +42,7 @@ const Header = () => {
          </header>
 
          {menu && (
-            <nav className="text-center">
+            <nav className="text-center fixed w-full bg-white">
                <ul className="flex flex-col">
                   <Link onClick={closeMenu} className="" href={"/"}>
                      <li className="font-semibold hover:bg-purple-500 hover:text-white py-3">Inicio</li>
