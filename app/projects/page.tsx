@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const ProjectsPage = () => {
    return (
-      <div className="p-5 flex-col flex gap-10">
+      <section className="p-5 flex-col flex gap-10">
          <h2 className="text-xl font-semibold text-purple-600">Projetos</h2>
 
          <div className="grid grid-cols-1 gap-5">
@@ -50,7 +50,7 @@ const ProjectsPage = () => {
                </div>
             </div>
          </div>
-      </div>
+      </section>
    );
 };
 
