@@ -1,7 +1,16 @@
-import { FileDownIcon, Github, Linkedin, MessageCircleMoreIcon } from "lucide-react";
+"use client";
+
+import { FileDownIcon, Github, Linkedin, MailIcon, MessageCircleMoreIcon } from "lucide-react";
 import Link from "next/link";
+import { useState } from "react";
 
 const AboutPage = () => {
+   const [email, setEmail] = useState(false);
+
+   const sendEmail = () => {
+      setEmail(!email);
+   };
+
    return (
       <section className="p-5">
          <h2 className="text-xl font-semibold text-purple-600">Sobre</h2>
@@ -13,7 +22,7 @@ const AboutPage = () => {
             tempo com minha família e amigos e aproveito as manhãs para surfar, uma atividade que me ajuda a começar o dia com energia e clareza mental.
          </p>
 
-         <div className="flex justify-between items-center mt-10">
+         <div className="flex justify-between items-center mt-10 flex-wrap gap-5">
             <ul className="gap-5 flex items-center">
                <li>
                   <Link href="https://www.linkedin.com/in/jackvr/" target="_blank">
@@ -30,14 +39,15 @@ const AboutPage = () => {
                      <MessageCircleMoreIcon className="text-purple-600" />
                   </Link>
                </li>
+               <li className="flex gap-2 items-center">
+                  <button onClick={sendEmail}>
+                     <MailIcon className="text-purple-600" />
+                  </button>
+                  {email && <span className="text-purple-600">ferreira.marlon@live.com</span>}
+               </li>
             </ul>
 
-            <Link
-               href="/MarlonFerreira.pdf"
-               target="_blank"
-               download="MarlonFerreira.pdf"
-               className="flex gap-2 items-center font-medium text-white bg-purple-500 hover:bg-purple-600 border-2 p-2 rounded-lg shadow-md">
-               <span className="font-semibold">Currículo</span>
+            <Link href="/MarlonFerreira.pdf" target="_blank" title="Download Currículo" download="MarlonFerreira.pdf" className="text-white bg-purple-500 hover:bg-purple-600 p-2 rounded-lg shadow-md">
                <FileDownIcon />
             </Link>
          </div>

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Tech = () => {
    return (
-      <div className="grid grid-cols-2 p-5 gap-3 md:grid-cols-4">
+      <section className="grid grid-cols-2 p-5 gap-3 md:grid-cols-4">
          <div className="flex flex-col items-center gap-2 border-2 shadow-md border-purple-500 rounded-lg p-6 w-full">
             <Image className="transition-all hover:scale-110 h-5 w-5" src="/github.svg" alt="github" width={25} height={25} />
             <span>GitHub</span>
@@ -67,7 +67,7 @@ const Tech = () => {
             <Image className="transition-all hover:scale-110 h-5 w-5" src="/aws.svg" alt="aws" width={25} height={25} />
             <span>AWS</span>
          </div>
-      </div>
+      </section>
    );
 };
 
