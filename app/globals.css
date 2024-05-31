@@ -4,7 +4,7 @@
 
 @layer base {
    body {
-      @apply h-full bg-slate-200;
+      @apply h-full;
    }
    html {
       @apply h-full;

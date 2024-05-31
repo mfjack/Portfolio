@@ -11,6 +11,10 @@ const ProjectsPage = () => {
             <div className="border-2 rounded-xl shadow-md">
                <Image src="/food.png" alt="food" width={0} height={0} sizes="100vw" className="w-full rounded-2xl object-contain p-2" />
 
+               <p className="p-2 text-xs font-medium text-left">
+                  Desenvolvimento de uma plataforma de delivery de alimentos inspirada no iFood.
+               </p>
+
                <div className="flex items-center justify-around p-2 gap-3">
                   <Link
                      className="text-black bg-purple-400 hover:bg-purple-500 rounded-md flex gap-3 font-medium w-full justify-center items-center p-2 text-center"

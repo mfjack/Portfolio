@@ -23,9 +23,12 @@ const Header = () => {
             </Link>
 
             <nav className="hidden md:block">
-               <ul className="flex items-center justify-center gap-5 md:text-lg">
+               <ul className="flex items-center justify-center gap-10 md:text-lg">
                   <Link onClick={closeMenu} href={"/"}>
                      <li className="font-semibold hover:text-purple-500">Inicio</li>
+                  </Link>
+                  <Link onClick={closeMenu} className="" href={"/tech"}>
+                     <li className="font-semibold hover:text-purple-500 py-3">Tecnologias</li>
                   </Link>
                   <Link onClick={closeMenu} href={" /about"}>
                      <li className="font-semibold hover:text-purple-500">Sobre</li>
@@ -46,6 +49,9 @@ const Header = () => {
                <ul className="flex flex-col w-full">
                   <Link onClick={closeMenu} className="" href={"/"}>
                      <li className="font-semibold hover:bg-purple-500 hover:text-white py-3">Inicio</li>
+                  </Link>
+                  <Link onClick={closeMenu} className="" href={"/tech"}>
+                     <li className="font-semibold hover:bg-purple-500 hover:text-white py-3">Tecnologias</li>
                   </Link>
                   <Link onClick={closeMenu} href={"/about"}>
                      <li className="font-semibold hover:bg-purple-500 hover:text-white py-3">Sobre</li>
