@@ -19,7 +19,7 @@ const Header = () => {
       <div className="w-full">
          <header className="flex items-center justify-center p-5">
             <nav className="hidden md:block">
-               <ul className="flex items-center justify-center gap-10 md:text-lg">
+               <ul className="flex items-center justify-center gap-10 md:text-xl">
                   <Link onClick={closeMenu} href={"/"}>
                      <li className="font-semibold hover:text-purple-500">Inicio</li>
                   </Link>
@@ -41,8 +41,8 @@ const Header = () => {
          </header>
 
          {menu && (
-            <nav className="text-center fixed w-full bg-white h-full flex items-center justify-center">
-               <ul className="flex flex-col w-full">
+            <nav className="text-center fixed w-full bg-white h-screen flex items-center justify-center">
+               <ul className="flex flex-col w-full h-screen justify-center">
                   <Link onClick={closeMenu} className="" href={"/"}>
                      <li className="font-semibold hover:bg-purple-500 hover:text-white py-3">Inicio</li>
                   </Link>
