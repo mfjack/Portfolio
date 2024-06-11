@@ -23,7 +23,7 @@ const ProjectsPage = () => {
                   </Link>
                   <Link
                      className="text-black bg-purple-400 hover:bg-purple-500 rounded-md flex gap-3 font-medium w-full justify-center items-center p-2 text-center"
-                     href="https://food-fsw.vercel.app/"
+                     href="https://jack-food.vercel.app/"
                      target="_blank">
                      <Globe size={18} />
                      Deploy
@@ -42,13 +42,13 @@ const ProjectsPage = () => {
                      <Github size={18} />
                      GitHub
                   </Link>
-                  {/* <Link
+                  <Link
                      className="text-black disabled: bg-purple-400 hover:bg-purple-500 rounded-md flex gap-3 font-medium w-full justify-center items-center p-2 text-center"
-                     href="https://food-fsw.vercel.app/"
+                     href="https://jack-store.vercel.app/"
                      target="_blank">
                      <Globe size={18} />
                      Deploy
-                  </Link> */}
+                  </Link>
                </div>
             </div>
          </div>
