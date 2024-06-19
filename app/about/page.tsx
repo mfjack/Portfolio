@@ -47,7 +47,13 @@ const AboutPage = () => {
                </li>
             </ul>
 
-            <Link href="/MarlonFerreira.pdf" target="_blank" title="Download Currículo" download="MarlonFerreira.pdf" className="text-white bg-purple-500 hover:bg-purple-600 p-2 rounded-lg shadow-md">
+            <Link
+               href="/MarlonFerreira.pdf"
+               target="_blank"
+               title="Download Currículo"
+               download="MarlonFerreira.pdf"
+               className="text-white bg-purple-500 hover:bg-purple-600 p-2 rounded-lg shadow-md flex gap-3 items-center font-semibold">
+               Download CV
                <FileDownIcon />
             </Link>
          </div>
